@@ -44,13 +44,12 @@ class Owner
     Dog.new(dog, self)
   end 
   
-  # But does this update the owners dog array?
   def walk_dogs
-    self.dogs.collect{|dog| dog.mood = "happy"}
+    self.dogs.collect!{|dog| dog.mood = "happy"}
   end 
   
   def feed_cats
-    self.cats.collect{|cat| cat.mood = "happy"}
+    self.cats.collect!{|cat| cat.mood = "happy"}
   end 
   
   def sell_pets
