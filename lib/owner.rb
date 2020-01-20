@@ -45,6 +45,6 @@ class Owner
   end 
   
   def walk_dogs
-    self.dogs
+    self.dogs.collect
   
 end
