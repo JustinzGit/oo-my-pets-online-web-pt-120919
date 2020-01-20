@@ -30,7 +30,7 @@ class Owner
   
   # Return a collection of cats that belong to a owner instance
   def cats
-    Cat.all.select{|cat| cat.owner.name == self}
+    Cat.all.select{|cat| cat.owner.name == self.name}
   end 
   
 end
