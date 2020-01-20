@@ -28,4 +28,9 @@ class Owner
     "I am a #{self.species}."
   end 
   
+  # Return a collection of cats that belong to a owner instance
+  def cats
+    Cat.all.select{|cat| cat.owner == self.name}
+  end 
+  
 end
