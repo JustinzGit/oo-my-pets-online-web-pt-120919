@@ -27,10 +27,13 @@ class Owner
   def say_species
     "I am a #{self.species}."
   end 
-  
-  # Return a collection of cats that belong to a owner instance
+
   def cats
     Cat.all.select{|cat| cat.owner.name == self.name}
+  end 
+  
+  def dogs
+    Dog.all.select{|dog| dog.owner.name == self.name}
   end 
   
 end
