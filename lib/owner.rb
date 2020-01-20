@@ -51,6 +51,9 @@ class Owner
   def feed_cats
     self.cats.map!{|cat| cat.mood = "happy"}
   end 
+  
+  def sell_pets
+    
 
     
   
